@@ -1,18 +1,37 @@
-.container {
-  background-image: url(https://wallpapers.com/images/featured/sky-mvehfqz6w2ges2dj.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  background: rgb(119,115,190);
+  background: linear-gradient(180deg, rgba(119,115,190,1) 0%, rgba(76,180,224,1) 100%);
+  height: 100vh;
+}
+
+*{
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.weather-box .main-desc {
+  margin-bottom: 15px;
+}
+
+.weather-box .desc {
+  font-weight: 300;
+}
+
+.weather-box h5 {
+}
+
+.wrap {
+  /* background-image: url(https://wallpapers.com/images/featured/sky-mvehfqz6w2ges2dj.jpg); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
   height: 100vh;
 }
 
 .weather-box {
   width: 500px;
-  height: 300px;
+  /* height: 300px; */
   border: 3px solid #fff;
   border-radius: 10px;
   display: flex;
@@ -21,6 +40,13 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
+  padding: 30px 0;
+}
+
+.icon {
+  width: 200px;
+  margin-top: -25px;
+  margin-bottom: -30px;
 }
 
 .btn-box {
@@ -37,4 +63,9 @@
 
 .btn-box button:last-child {
   margin-right: 0;
+}
+
+.btn-box .selected {
+  background-color: gold;
+  color: #000;
 }
